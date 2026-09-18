@@ -26,7 +26,7 @@ reinstating the rules recovers 14/14.
 
 | Question | Result | Data |
 |---|---|---|
-| The frozen suite, re-run 17 September 2026 | 14/14, with no model entry point importable at all | [`data/kite-evaluation-suite.json`](data/kite-evaluation-suite.json) |
+| The frozen suite, re-run 18 September 2026 | 14/14, with no model entry point importable at all | [`data/kite-evaluation-suite.json`](data/kite-evaluation-suite.json) |
 | How many positive demonstrations a rule takes | one is refused as a case rather than a generalisation; three are enough; a fourth changes nothing | [`data/evidence-and-supervision.json`](data/evidence-and-supervision.json) |
 | What the counter-demonstrations buy | none, and nothing is induced; one, and the body is a single literal; two, and the body is the full conjunction | [`data/evidence-and-supervision.json`](data/evidence-and-supervision.json) |
 | When the evidence admits several hypotheses | concluding on any one of them gives 26 wrong conclusions out of 192; concluding only what all of them accept gives 0 | [`data/ambiguity-policies.json`](data/ambiguity-policies.json) |
