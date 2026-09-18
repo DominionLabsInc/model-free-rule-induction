@@ -5,8 +5,8 @@ controlled ablation showing the competence is carried by those rules and nothing
 
 Stefan Ragland, Dominion Labs Research & Development. Published 12 November 2024.
 
-- Paper: <https://dmnlabs.org/research/model-free-rule-induction/>
-- Paper (offline copy): [`paper/model-free-rule-induction.html`](paper/model-free-rule-induction.html)
+- Paper (PDF): [`paper/model-free-rule-induction.pdf`](paper/model-free-rule-induction.pdf)
+- Paper (web): <https://dmnlabs.org/research/model-free-rule-induction/>
 - Contact: research@dmnlabs.org
 
 ## The result
