@@ -164,7 +164,7 @@ h2,h3{break-after:avoid;page-break-after:avoid}
 
 <section id="s4"><h2><span class="num">4</span>Results</h2>
 <p>On the frozen suite of 14 cases (all using unseen constants: positive derivations, missing-precondition negatives, an irrelevant-fact distractor, role-reversal traps, and transition-sequence cases) the fully-equipped system solves 14/14 with zero model calls.</p>
-<figure><div class="chart-title">A causal ablation of the learned competence</div><div class="canvas"><svg class="chart" viewBox="0 0 760 345" role="img">
+<figure class="fit"><div class="chart-title">A causal ablation of the learned competence</div><div class="canvas"><svg class="chart" viewBox="0 0 760 345" role="img">
 <line class="grid" x1="66" y1="299.0" x2="736" y2="299.0"/>
 <text class="tick" x="58" y="303.0" text-anchor="end">0</text>
 <line class="grid" x1="66" y1="242.4" x2="736" y2="242.4"/>
@@ -182,7 +182,7 @@ h2,h3{break-after:avoid;page-break-after:avoid}
 <text class="axis-label" transform="rotate(-90 16 158)" x="16" y="158" text-anchor="middle">Held-out cases solved (/14)</text>
 <rect class="bar" x="89.9" y="34.9" width="47.9" height="264.1" rx="3" style="fill:var(--s3)"/>
 <text class="val" x="113.9" y="27.9" text-anchor="middle">14</text>
-<text class="tick" x="113.9" y="317" text-anchor="middle">Full</text>
+<text class="tick" x="113.9" y="317" text-anchor="start">Full</text>
 <rect class="bar" x="185.6" y="34.9" width="47.9" height="264.1" rx="3" style="fill:var(--s3)"/>
 <text class="val" x="209.6" y="27.9" text-anchor="middle">14</text>
 <text class="tick" x="209.6" y="317" text-anchor="middle">Sham</text>
@@ -221,7 +221,7 @@ h2,h3{break-after:avoid;page-break-after:avoid}
 <tr><td>Restored</td><td class="num">2</td><td class="num">2</td><td class="num">14/14</td><td class="num">0</td></tr>
 </tbody></table></div>
 <p>The 7/14 floor is not noise: the seven cases that pass under every ablated condition are exactly the seven that require <em>no</em> derivation (missing-precondition refusals, role-reversal refusals, a blocked destination). The seven that flip from pass to fail when the rules are removed or de-validated are exactly the seven requiring an actual derivation. This is the clean causal signature: removing the rules removes precisely the positive-derivation competence and nothing else.</p>
-<figure><div class="chart-title">Remove the rules, the capability goes; restore them, it returns</div><div class="canvas"><svg class="chart" viewBox="0 0 720 320" role="img">
+<figure class="fit-sm"><div class="chart-title">Remove the rules, the capability goes; restore them, it returns</div><div class="canvas"><svg class="chart" viewBox="0 0 720 320" role="img">
 <line class="grid" x1="66" y1="274.0" x2="696" y2="274.0"/>
 <text class="tick" x="58" y="278.0" text-anchor="end">0</text>
 <line class="grid" x1="66" y1="222.4" x2="696" y2="222.4"/>
@@ -236,9 +236,9 @@ h2,h3{break-after:avoid;page-break-after:avoid}
 <text class="tick" x="58" y="20.0" text-anchor="end">15</text>
 <line class="axis" x1="66" y1="274" x2="696" y2="274"/>
 <text class="axis-label" transform="rotate(-90 16 145)" x="16" y="145" text-anchor="middle">Cases solved (/14)</text>
-<text class="tick" x="66.0" y="292" text-anchor="middle">Full</text>
+<text class="tick" x="66.0" y="292" text-anchor="start">Full</text>
 <text class="tick" x="381.0" y="292" text-anchor="middle">Rules removed</text>
-<text class="tick" x="696.0" y="292" text-anchor="middle">Rules restored</text>
+<text class="tick" x="696.0" y="292" text-anchor="end">Rules restored</text>
 <polyline class="series-line" points="66.0,33.2 381.0,153.6 696.0,33.2" style="stroke:var(--s1)"/>
 <circle class="dot" cx="66.0" cy="33.2" r="3.4" style="fill:var(--s1)"/>
 <circle class="dot" cx="381.0" cy="153.6" r="3.4" style="fill:var(--s1)"/>
@@ -255,7 +255,7 @@ h2,h3{break-after:avoid;page-break-after:avoid}
 
 <h3>5.2 How much evidence a rule takes</h3>
 <p>Holding the counter-demonstrations fixed and varying the positive demonstrations from one to four (Figure&nbsp;3): with a <em>single</em> positive the learner declines to generalise at all and says why, that one example is a case rather than a generalisation. With two the evidence does not yet determine a single hypothesis. From <strong>three</strong> the induced rule applies to every held-out case, and a fourth changes nothing, which is the same property this paper reports for the transition rule in section&nbsp;6: a further success cannot narrow a hypothesis that already covers it. At every setting, refusals on non-members stayed at 100%: thinner evidence buys less application, never more error.</p>
-<figure class="chart">
+<figure class="chart fit-sm">
 <svg viewBox="0 0 640 330" role="img" aria-label="Outcome against the number of positive demonstrations">
   <g>
     <line class="axis" x1="150" y1="30" x2="150" y2="250"/>
@@ -301,7 +301,7 @@ h2,h3{break-after:avoid;page-break-after:avoid}
 
 <h3>5.3 What the counter-demonstrations buy</h3>
 <p>This paper argues that negatives are what force a precondition into the body rather than leaving it an incidental fact. That argument can now be read off the induced rule itself. Holding the positives fixed and varying the counter-demonstrations from none to two (Figure&nbsp;4): with none, nothing separates the hypothesis from its background and no rule is induced. With one, the body is a single literal, which is exactly what that evidence licenses, and the rule accordingly applies to a case it should refuse. With the second, which discriminates the remaining feature, the body becomes the full conjunction, application is complete and the refusals are restored.</p>
-<figure class="chart">
+<figure class="chart fit-sm">
 <svg viewBox="0 0 640 330" role="img" aria-label="Outcome against the number of counter-demonstrations">
   <g>
     <line class="axis" x1="150" y1="30" x2="150" y2="250"/>
